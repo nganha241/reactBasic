@@ -1,0 +1,54 @@
+import React from 'react';
+
+class MyComponent extends React.Component {
+
+    // state = {
+    //     name: 'Ngan Ha',
+    //     age: 20
+    // }
+
+    // handleOnChangeName = (event) => {
+    //     this.setState({
+    //         name: event.target.value,
+    //     })
+    // }
+
+    // handleClickButton = () => {
+    //     alert('hello')
+    // }
+
+    render() {
+
+        return (
+            // <React.Fragment></React.Fragment>
+            <>
+                {/* <div>
+                    <input value={this.state.name} type="text" onChange={(event)=> this.handleOnChangeName(event)} />
+                </div>
+
+                <div>
+                    hello my name is {this.state.name} 
+                </div>
+
+                <div className='tuoi'>
+                    {this.state.age} year olds
+                </div>
+
+                <div className='onc'>
+                    <button onClick={()=> this.handleClickButton()}>Click</button>
+                </div> */}
+
+                <form>
+                    <label for="fname">First name:</label><br/>
+                    <input type="text" id="fname" name="fname" value="John"/><br/>
+                    <label for="lname">Last name:</label><br/>
+                    <input type="text" id="lname" name="lname" value="Doe"/><br/><br/>
+                    <input type="submit" value="Submit"/>
+                </form> 
+            </>
+            
+        )
+    }
+}
+
+export default MyComponent;
